@@ -5,13 +5,14 @@ plugins {
 
 android {
 
-    buildFeatures {
+    buildFeatures{
         viewBinding true
     }
+
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.cmartus.andriodsample"
+        applicationId "com.ebookfrenzy.statechange"
         minSdk 26
         targetSdk 31
         versionCode 1
