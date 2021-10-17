@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Add Save Name Data 1</string>
+    <string name="nameDisplay">No Name To Display</string>
+    <string name="addName">Add Name</string>
+    <string name="enterName">Enter Name</string>
+</resources>
