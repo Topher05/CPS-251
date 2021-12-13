@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:foregroundTint="@color/black"
     android:orientation="vertical"
     tools:context=".ui.main.MainFragment">
 
@@ -18,17 +17,17 @@
             android:layout_height="match_parent"
             android:layout_margin="10dp">
 
+
             <EditText
                 android:id="@+id/contactName"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:autofillHints=""
+                android:autofillHints="@string/enter_name"
                 android:ems="10"
                 android:hint="@string/enter_name"
-                android:hintTextColor="#757575"
                 android:inputType="none"
-                android:textSize="18sp"
-                tools:ignore="TextContrastCheck,TextContrastCheck,TextContrastCheck,TextContrastCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                android:textColorHint="#757575"
+                tools:ignore="TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -40,14 +39,15 @@
                 android:id="@+id/contactPhone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:autofillHints=""
+                android:autofillHints="@string/enter_phone"
                 android:ems="10"
                 android:hint="@string/enter_phone"
-                android:hintTextColor="#757575"
                 android:inputType="none"
-                android:textSize="18sp"
-                tools:ignore="TextContrastCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+                android:textColorHint="#757575"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
+
+
 
     </TableLayout>
 
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/add_string"
+            android:text="@string/addButton"
             android:textColor="@color/black" />
 
         <Button
@@ -73,31 +73,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/find_string"
+            android:text="@string/findButton"
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/sortButton"
-            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/sortAscButton"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/sortButton"
+            android:text="@string/asc"
             android:textColor="@color/black" />
 
         <Button
-            android:id="@+id/deleteButton"
-            style="@style/Widget.AppCompat.Button.Borderless"
+            android:id="@+id/sortDescButton"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:foregroundTint="@color/black"
-            android:text="@string/delete_string"
+            android:text="@string/desc"
             android:textColor="@color/black" />
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/contact_recycler"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
 </LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Contacts Projects</string>
+    <string name="product_id">Product ID</string>
+    <string name="productId_textView">Not assigned</string>
+    <string name="productName">Product Name</string>
+    <string name="productQuantity">Product Quantity</string>
+    <string name="addButton">Add</string>
+    <string name="findButton">Find</string>
+    <string name="deleteButton">Delete</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_phone">Enter Phone</string>
+    <string name="asc">ASC</string>
+    <string name="desc">DESC</string>
+    <string name="delete">Delete</string>
+</resources>

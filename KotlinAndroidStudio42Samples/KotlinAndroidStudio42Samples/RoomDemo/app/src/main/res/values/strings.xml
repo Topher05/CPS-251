@@ -7,4 +7,7 @@
     <string name="add_string">Add</string>
     <string name="find_string">Find</string>
     <string name="delete_string">Delete</string>
+    <string name="sortButton">Sort</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_phone">Enter Phone#</string>
 </resources>
